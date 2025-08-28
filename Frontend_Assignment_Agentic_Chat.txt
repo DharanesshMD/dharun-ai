@@ -1,0 +1,51 @@
+Frontend Assignment — Mini Agentic Chat UI (1 Day)
+Goal
+Build a small web app that simulates an Agentic Chat Interface. No real AI needed — mock the responses. I’m evaluating your design sense, component structure, and execution speed.
+What to Build
+A single-page app with three regions:
+1) Top Bar – product name/logo placeholder, simple and clean.
+2) Left Sidebar (History) – shows last 3–5 queries (click to re-open).
+3) Main Panel (Chat) –
+   - Input box + send button
+   - Chat transcript (user + bot messages)
+   - Collapsible “Agent Thinking” panel per bot reply (shows step-by-step reasoning from mocked data)
+Requirements
+Stack: React (preferred) or another modern framework; Tailwind or any CSS approach is fine.
+No real backend needed. Use mock data or a tiny local JSON file. (Optional: a simple dummy FastAPI endpoint if you want.)
+State & Data: On “Send”, append the user message and a mocked bot response. Each bot response includes answer and agent_steps (array of strings). Clicking a history item reloads that conversation.
+UX/Design: Clean layout, good spacing/typography, sensible component placement. Collapsible “Agent Thinking” should open/close smoothly. Reasonable responsiveness (works on laptop; passable on narrow width).
+Code: Break into components: TopBar, SidebarHistory, ChatWindow, Message, AgentThinking. Keep code readable, commented where non-obvious.
+Mock Response Shape (use this)
+{
+  "answer": "Here’s a concise answer grounded in retrieved context.",
+  "agent_steps": [
+    "Parsed the user intent",
+    "Searched documents: policy.pdf, faq.md",
+    "Ranked snippets and built a draft",
+    "Finalized concise response with citations"
+  ],
+  "sources": [
+    {"doc":"policy.pdf","page":3},
+    {"doc":"faq.md","section":"eligibility"}
+  ]
+}
+Deliverables (what to submit)
+A GitHub repo (or Replit/Stackblitz/Lovable link) with:
+- Source code
+- README.md with: How to run, Brief design decisions (1–2 paragraphs), Screenshots or short Loom (optional, nice to have)
+If using any backend stub, include requirements.txt and run steps.
+Evaluation Criteria
+Design sense (30%) – clean, minimal, thoughtful spacing, visual hierarchy.
+Component architecture (25%) – modular, readable, easy to extend.
+Interaction quality (20%) – smooth collapsible panel, history works, no jank.
+Implementation speed/discipline (15%) – functional without over-engineering.
+Polish (10%) – small touches (loading state, empty states, keyboard enter-to-send).
+Nice-to-Have (Optional Stretch — do if you have time)
+Light/Dark mode toggle.
+Animate “Agent Thinking” steps (e.g., reveal one by one).
+Persist history in localStorage.
+Simple theming (CSS variables or Tailwind config).
+Tiny test: one unit test on a pure function or component.
+Timebox
+Aim to keep this within one working day. Prioritize clarity and usability over features.
+If anything is unclear: make a reasonable assumption, note it in the README, and move on. The goal is to see how you think, design, and ship.
