@@ -1,6 +1,11 @@
 
 # Frontend Assignment — Mini Agentic Chat UI
 
+## 📺 Demo
+
+Watch a video walkthrough of the application here:  
+[Loom Demo](https://www.loom.com/share/6711ca08d16a420287efc851c733d794?sid=45d33b41-5206-41ce-accf-c7acbff739ed)
+
 A sophisticated web application that simulates an Agentic Chat Interface, demonstrating advanced frontend architecture, component design, and user experience principles. This implementation exceeds the assignment requirements while maintaining clean, readable code and excellent user experience. The project demonstrates advanced frontend development skills, modern React patterns, and production-ready architecture.
 
 ## 🎯 Assignment Goal
@@ -252,5 +257,3 @@ This project demonstrates:
 - **Scalability**: Component architecture that can easily accommodate new features
 - **Performance**: Optimized bundle size and runtime performance
 - **Accessibility**: WCAG compliance and keyboard navigation support
-
-
